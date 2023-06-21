@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> At the workspace of an IB persona </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="try.css">
+</head>
+<body style="background-color:lightblue;">
+    <h1 class="display-2"> 
+        <center>
+            At the workspace of an IB persona
+        </center>
+    </h1>
+    <div class="container">
+        <div class="row">
+           
+          <div class="col">
+           <center>
+             <img src="images/at the office.png" alt="inside_the_mind" >
+             
+            </center>
+            </div>
+
+          <div class="col">
+            <p class="lead" id ="targetText">
+              After all a businessperson has to get things done at the workplace. The work must be efficient and highly effective. 
+              Explore the way of working of an international businessperson.
+            </p>
+            <center>
+                <button onclick="internationalBusinessComminication()" type="button" class="btn btn-primary btn-lg">International business communication</button><br> <br>
+            </center>
+            <center>
+                <button onclick="collaboration()" type="button" class="btn btn-primary btn-lg">Collaboration</button> <br> <br>
+            </center> 
+            <center>
+                <button onclick="informationManagment()"type="button" class="btn btn-primary btn-lg">Infornation managment</button> <br> <br>
+            </center>
+           
+          </div>
+        </div>
+    </div>
+    <div> 
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="inside_the_mind.html" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <li class="page-item"><a class="page-link" href="index.html">Home</a></li>
+              </li>
+                <a class="page-link" href="outside_world.html" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+    <script>
+      function internationalBusinessComminication()
+      {
+        document.getElementById('targetText').innerHTML = 'By effectively communicating on a global scale, businesspeople can gain diverse perspectives, access new markets, and capitalise on international business opportunities. This requires hard work on communication skills and understanding cultural differences.'+
+        ' Solving problems stemming from cultural differences is a hard but necessary task.';
+      }
+      function collaboration()
+      {
+        document.getElementById('targetText').innerHTML = 'By encouraging open dialogue and active listening, collaborative communication promotes a culture of respect and trust, which leads to stronger working relationships and increased employee engagement.'+
+        ' It enables efficient project management, ensuring tasks are coordinated, deadlines are met, and resources are optimised.';
+      }
+      function informationManagment()
+      {
+        document.getElementById('targetText').innerHTML = 'Business professionals are filled with information daily. It is vital to have a critical judgment whish data is important, credible, and useful.'+
+        'This allows business professionals to analyse market trends, customer behaviour, and internal operations, identifying opportunities and optimising resource allocation.';
+      }
+    </script>
+</body>
+</html>
